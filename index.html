@@ -1,182 +1,465 @@
 <!DOCTYPE html>
-<html>
-  <head> 
-    <title>Illinois Fermin - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illinois Fermin | Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
+    <div class="retro-loader" aria-hidden="true"><span></span></div>
+    <header class="site-header" id="home">
+      <nav class="nav wrapper" aria-label="Main navigation">
+        <a class="brand" href="#home">
+          <span class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" role="img">
+              <rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7" />
+              <path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+          </span>
           Illinois Fermin
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jdoe@jeemail.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +13456764598
+        </a>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="classic-toggle" id="classic_toggle" type="button" aria-pressed="false">
+          Classic
+        </button>
+      </nav>
 
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#Skills">Skills</a>
-          <a class="topmenu" href="#Projects">Projects</a>
-          <a class="topmenu" href="#Recommendations">Recommendations</a>  
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
-      </div>
-
-      <div>
+      <section class="hero wrapper" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow">Front-End Developer | Sales Ops Specialist</p>
           <h1>
-            Hi, I'm Illinois Fermin! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+            <span id="typing_name" data-full-text="Illinois Fermin">Illinois Fermin</span>
+            <img src="html_finalprojimages/waving-hand.png" alt="Waving hand" class="wave-icon" />
           </h1>
-          <p>
-            I am a front end developer with 2 years of experience in both backend and frontend.
-            I have worked on applications and dashborad deployed on Salesforce Cloud. 
-            I like to programming and have worked on my project my whole life, NLU, Sentiment analyzer to name a few.
+          <p class="hero-role">
+            Project Management | Travel Agent | Data Analyst
           </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
-          <h6>HTML</h6>
-          <p>9 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
-          <p>6 years experience</p>
-        </div>  
-
-        <div class="skill">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fcss-file-format-vector-icon-600nw-2487957697.jpg&f=1&nofb=1&ipt=4de82333c7756cf6edb5d7de05df55a52f10acbe2854f21832b92f33361ef242"/>
-            <h6>CSS</h6>
-            <p>9 years experience</p>
-          </div> 
-
-          <div class="skill">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreepnglogo.com%2Fimages%2Fall_img%2Fc-logo-a2fa.png&f=1&nofb=1&ipt=cfd248bd30b9c7682cee3c535d6fc609166d0f9040d95d45ae6fad3527ef11a0"/>
-            <h6>c++</h6>
-            <p>2 years experience</p>
-          </div> 
-          
-          <div class="skill">
-            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F10%2FPython_logo_icon.png&f=1&nofb=1&ipt=de2b21a2ca1a66be6faa015549bc3ed1b02f4cebb1fdd07b54c80e8bb1fbbef6"/>
-            <h6>Python</h6>
-            <p>2 years experience</p>
-          </div> 
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Wordpress website</h3>
-            <ul>
-              <li>Developed a secure Wordpress blog and it is integrated with chatbot for an customer services, using HTML, CSS, JavaScript.</li>
-            </ul>
+          <p>
+            Results-driven Web Developer focused on dynamic, responsive websites
+            using HTML, CSS, and JavaScript. I prioritize user-friendly design,
+            performance optimization, and cross-device compatibility while
+            delivering data-driven insights through dashboards and analytics.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            <a class="btn btn-ghost" href="./Illinois_Fermin_CV.pdf" download>Download CV</a>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Data Analyzer</h3>
-            <ul>
-              <li>Developed and deployed an app that analized the reviews section of an eCommerce platform./li>
-            </ul>
+          <div class="quick-stats">
+            <article class="stat-chip">
+              <p class="stat-value" data-counter-target="3">0</p>
+              <p class="stat-label">Live Projects</p>
+            </article>
+            <article class="stat-chip">
+              <p class="stat-value" data-counter-target="6">0</p>
+              <p class="stat-label">Core Skills</p>
+            </article>
+            <article class="stat-chip">
+              <p class="stat-value" data-counter-target="6">0</p>
+              <p class="stat-label">Certifications</p>
+            </article>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Travel Website</h3>
-            <ul>
-              <li>Created a styled multi-page website for multiple places around the world and integrated it with a shopping cart, and a Sabre API</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
-
-    <!-- Recommendations -->
-    <section id="recommendations">
-      <h2>Recommendations</h2>
-      <div style="clear:both;"></div>
-      <div class="all_recommendations" id="all_recommendations">
-        <div class="recommendation">
-          <span>&#8220;</span>
-          I want to recognize your outstanding performance in meeting and exceeding our sales targets this quarter; your hard work has made a significant impact on our success.
-Invaluable contribution: Your contributions to the project have been invaluable.
-          <span>&#8221;</span>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          Your ability to work well with your classmates on group projects demonstrates strong teamwork and collaboration skills. Specifically, you were very good at sharing ideas and brainstorming with your team.
-          <span>&#8221;</span>
+
+        <aside class="hero-side">
+          <img
+            class="profile-real profile-circle"
+            src="html_finalprojimages/profile.png"
+            alt="Portrait of Illinois Fermin"
+          />
+          <h2>Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <img src="html_finalprojimages/flash.png" alt="Location" />
+              Santo Domingo, Dominican Republic
+            </li>
+            <li>
+              <img src="html_finalprojimages/envelope.png" alt="Email" />
+              <a href="mailto:illinoisfermin@gmail.com">illinoisfermin@gmail.com</a>
+            </li>
+            <li>
+              <img src="html_finalprojimages/phone.png" alt="Phone" />
+              <a href="tel:+18492625079">+1 849 262 5079</a>
+            </li>
+            <li>
+              <img src="https://cdn.simpleicons.org/linkedin/4FD1FF" alt="LinkedIn" />
+              <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </li>
+            <li>
+              <img src="https://cdn.simpleicons.org/credly/F36D21" alt="Credly" />
+              <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener noreferrer">Credly Profile</a>
+            </li>
+            <li>
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+              <a href="https://github.com/kx310711" target="_blank" rel="noopener noreferrer">github.com/kx310711</a>
+            </li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section wrapper" id="summary">
+        <h2>Summary</h2>
+        <p>
+          Front-End Developer and Sales Operations Specialist with hands-on
+          experience building responsive web applications, improving digital user
+          journeys, and driving business results with data. I combine modern
+          frontend execution (HTML, CSS, JavaScript, React) with practical
+          analytics skills (Python, Pandas, NumPy, SQL, Excel) to transform
+          complex information into clear dashboards and actionable decisions.
+          Across sales operations, travel services, and customer-facing roles, I
+          consistently deliver process improvements, stronger customer
+          experiences, and measurable growth through collaboration, ownership,
+          and data-driven problem solving.
+        </p>
+      </section>
+
+      <section class="section wrapper" id="experience">
+        <h2>Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item expanded">
+            <button class="experience-toggle" type="button" aria-expanded="true">
+              <span>
+                <strong>National Debt Relief, LLC</strong>
+                <small>Sales Operations Specialist · Santo Domingo, DR · Apr 2023 - Present</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Lead creditor queue management, bilingual operations, and Sales Ops support workflows.</li>
+                <li>Partner with sales teams through reports and dashboards that guide target achievement.</li>
+                <li>Improve onboarding quality through contract review, call logging, and data cleaning controls.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>Trekking and Hiking DR</strong>
+                <small>Tourism Specialist · Santo Domingo, DR · Dec 2020 - Present</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Plan and deliver travel experiences, packages, and ticketing with high client satisfaction.</li>
+                <li>Use web development to build engaging tourism sites and improve conversion journeys.</li>
+                <li>Negotiate contracts and optimize offers using trend analysis and audience targeting insights.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>ERC (Enhanced Resource Centers)</strong>
+                <small>Billing Specialist / Customer Services · Santo Domingo, DR · Aug 2019 - Feb 2020</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Mentored agents in analytical and critical thinking to improve performance consistency.</li>
+                <li>Designed assignments and feedback loops while maintaining strong service quality under pressure.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>Conduent</strong>
+                <small>Customer Service Representative · Santo Domingo Este, DR · Feb 2019 - Aug 2019</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Delivered high-quality customer support and contributed to collaborative process improvements.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>Virginia Travel</strong>
+                <small>Travel Agent · Santo Domingo, DR · Sept 2018 - Feb 2019</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Contributed to roughly 30% sales growth through contract negotiations and package strategy.</li>
+                <li>Secured 7 new partner contracts with restaurants and tour agencies to expand offers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>D' Junior Security</strong>
+                <small>System Security Analyst · Santo Domingo, DR · Mar 2016 - Oct 2018</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Managed camera maintenance, system programming, and vulnerability checks.</li>
+                <li>Installed surveillance hardware and executed security assessment improvements.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="experience-item">
+            <button class="experience-toggle" type="button" aria-expanded="false">
+              <span>
+                <strong>Greys Center</strong>
+                <small>Web Designer / Editor · Santo Domingo, DR · Jun 2015 - Feb 2016</small>
+              </span>
+              <span class="toggle-symbol">+</span>
+            </button>
+            <div class="experience-content">
+              <ul>
+                <li>Coordinated editorial workflows with authors, editors, and designers.</li>
+                <li>Built responsive websites focused on usability and digital publishing quality.</li>
+              </ul>
+            </div>
+          </article>
         </div>
-        <div class="recommendation">
-          <span>&#8220;</span>
-          You’ve shown great improvement in your time management skills. I’ve noticed you turning up to class more prepared and more ready to learn.
-Communication: Your ability to clearly articulate your thoughts and ideas in written communication is impressive. Keep up that growth mindset!
-          <span>&#8221;</span>
+      </section>
+
+      <section class="section wrapper" id="education">
+        <h2>Education</h2>
+        <div class="card-grid two-col">
+          <article class="card">
+            <h3>Universidad Autónoma de Santo Domingo (UASD)</h3>
+            <p>Bachelor of Science (BS), Biomedical Sciences</p>
+            <p class="meta">Santo Domingo, DR · Jan 2022 - Present</p>
+          </article>
+          <article class="card">
+            <h3>Instituto Técnico Superior Comunitario (ITSC)</h3>
+            <p>Associate Degree in Travel and Tourism Management</p>
+            <p class="meta">Santo Domingo, DR · Mar 2016 - Oct 2019</p>
+            <p class="meta">Cum Laude; GPA: 4.0</p>
+          </article>
         </div>
-        <div class="recommendation">
-            <span>&#8220;</span>
-            Keep up the excellent work on the project; your dedication and focus are truly making a difference.
-Overcoming Challenges: I believe in your ability to overcome this challenge; your resilience and determination have always been inspiring.
-            <span>&#8221;</span>
-          </div>
+      </section>
+
+      <section class="section wrapper" id="skills">
+        <h2>Top Skills</h2>
+        <div class="card-grid">
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Bootstrap, Figma.</p>
+          </article>
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <h3>Programming</h3>
+            <p>Python, JavaScript, C, C++.</p>
+          </article>
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <h3>Performance</h3>
+            <p>Website performance optimization and SEO optimization.</p>
+          </article>
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <h3>Project Management</h3>
+            <p>Team management, Scrum, Agile delivery.</p>
+          </article>
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <h3>Data Analyst</h3>
+            <p>Python, Pandas, MatLab, NumPy, SQL, Excel, IBM Cogno.</p>
+          </article>
+          <article class="card skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" />
+            <h3>Salesforce & Travel Tools</h3>
+            <p>Salesforce, Sabre, Amadeus GDS, planning and organization.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrapper" id="certifications">
+        <h2>Certifications</h2>
+        <div class="card-grid two-col">
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>IBM Data Analyst Specialization — IBM, Issued Jan 2026</p>
+          </article>
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>Google Project Management Specialization — Google, Issued Jan 2026</p>
+          </article>
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>IBM Front-End Developer Specialization — IBM, Issued Feb 2026</p>
+          </article>
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>Google Digital Marketing & E-commerce Specialization — Google, Issued Nov 2025</p>
+          </article>
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>Developing Front-End Apps with React — IBM, Issued Oct 2025</p>
+          </article>
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
+            <p>Salesforce Sales Operations Specialization — Salesforce, Issued Jun 2025</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrapper" id="projects">
+        <h2>Projects / Open Source</h2>
+        <div class="project-tools">
+          <label for="project_filter">Filter projects:</label>
+          <input
+            id="project_filter"
+            type="text"
+            placeholder="Type keyword like react, converter, calculator..."
+          />
+        </div>
+        <div class="card-grid projects-grid">
+          <article class="card project-card">
+            <img src="html_finalprojimages/flash.png" alt="Project" />
+            <h3>Simple Interest Calculator</h3>
+            <p>Built a responsive UI to calculate interest based on user input.</p>
+            <p class="tag-row">HTML • CSS • JavaScript</p>
+            <a
+              class="btn project-link"
+              href="https://kx310711.github.io/Simple-Interest-Calculator-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Project</a
+            >
+          </article>
+          <article class="card project-card">
+            <img src="html_finalprojimages/flash.png" alt="Project" />
+            <h3>Unit Conversion Tool</h3>
+            <p>Created a responsive unit converter with strong input validation.</p>
+            <p class="tag-row">HTML • CSS • JavaScript</p>
+            <a
+              class="btn project-link"
+              href="https://kx310711.github.io/Unit-conversion/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Project</a
+            >
+          </article>
+          <article class="card project-card">
+            <img src="html_finalprojimages/flash.png" alt="Project" />
+            <h3>Alura-Oracle One</h3>
+            <p>Developed a text encryption/decryption tool focused on algorithms and UI.</p>
+            <p class="tag-row">HTML • CSS • JavaScript</p>
+            <a
+              class="btn project-link"
+              href="https://kx310711.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Project</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrapper" id="awards">
+        <h2>Honors & Awards</h2>
+        <div class="card-grid two-col">
+          <article class="card cert-card">
+            <img src="html_finalprojimages/checkmark--outline.svg" alt="Award" />
+            <p>Cum Laude</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrapper" id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="all_recommendations" id="all_recommendations">
+          <article class="recommendation">
+            <p>
+              Illinois consistently delivers on deadlines and communicates clearly
+              with both technical and non-technical teammates.
+            </p>
+          </article>
+          <article class="recommendation">
+            <p>
+              Strong collaboration skills and a practical mindset make Illinois a
+              reliable contributor on fast-moving projects.
+            </p>
+          </article>
+          <article class="recommendation">
+            <p>
+              Excellent growth in ownership and planning. The quality of work has
+              improved steadily with each release.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section wrapper" id="contact">
+        <h2>Leave a comment</h2>
+        <form class="contact-form" onsubmit="addRecommendation(event)">
+          <label for="name_input">Name (optional)</label>
+          <input id="name_input" name="name" type="text" placeholder="Your name" />
+
+          <label for="new_recommendation">Message</label>
+          <textarea
+            id="new_recommendation"
+            name="message"
+            rows="5"
+            placeholder="Write your recommendation here"
+          ></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit Recommendation</button>
+        </form>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
+
+    <dialog class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" />
+      <h3>Recommendation saved</h3>
+      <p>Thank you for sharing your feedback.</p>
+      <button class="btn btn-secondary" onclick="showPopup(false)">Close</button>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="wrapper footer-grid">
+        <p class="retro-badge">UNDER CONSTRUCTION</p>
+        <p class="visitor-counter">Visitor Counter: <span id="visit_count">000000</span></p>
+        <p>Copyright © 2026 Illinois Fermin. All rights reserved.</p>
+        <p>Santo Domingo, Dominican Republic</p>
+        <p><a href="mailto:illinoisfermin@gmail.com">illinoisfermin@gmail.com</a> | <a href="tel:+18492625079">+1 849 262 5079</a></p>
+        <p>
+          <img class="footer-logo" src="https://cdn.simpleicons.org/linkedin/4FD1FF" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          |
+          <img class="footer-logo" src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+          <a href="https://github.com/kx310711" target="_blank" rel="noopener noreferrer">GitHub</a>
+          |
+          <img class="footer-logo" src="https://cdn.simpleicons.org/credly/F36D21" alt="Credly" />
+          <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener noreferrer">Credly</a>
+        </p>
       </div>
-    </section>
-
-    <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
-        <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
-        </fieldset>
-      </div>
-    </section>
-
-    <div class="iconbutton">
-      <a href="#home">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-      </a>
-    </div>
-
-    <div class="popup" id="popup" class="flex_center">
-      <img src="html_finalprojimages/checkmark--outline.svg"/>
-      <h3>Thank for leaving a recommendation, you are amazing!!!</h3>
-      <button onclick="showPopup(false)">Ok</button>
-    </div>
+    </footer>
+    <div class="retro-statusbar" id="retro_statusbar" aria-live="polite">Ready</div>
   </body>
 </html>
