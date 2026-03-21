@@ -1,465 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Illinois Fermin | Portfolio </title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <div class="retro-loader" aria-hidden="true"><span></span></div>
-    <header class="site-header" id="home">
-      <nav class="nav wrapper" aria-label="Main navigation">
-        <a class="brand" href="#home">
-          <span class="brand-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" role="img">
-              <rect x="3" y="4" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.7" />
-              <path d="M9 20h6M12 16v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
-            </svg>
-          </span>
-          Illinois Fermin
-        </a>
-        <ul class="menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#recommendations">Recommendations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="classic-toggle" id="classic_toggle" type="button" aria-pressed="false">
-          Classic
-        </button>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illinois Fermin — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-      <section class="hero wrapper" id="about">
-        <div class="hero-copy">
-          <p class="eyebrow">Front-End Developer | Sales Ops Specialist</p>
-          <h1>
-            <span id="typing_name" data-full-text="Illinois Fermin">Illinois Fermin</span>
-            <img src="html_finalprojimages/waving-hand.png" alt="Waving hand" class="wave-icon" />
-          </h1>
-          <p class="hero-role">
-            Project Management | Travel Agent | Data Analyst 
-          </p>
-          <p>
-            Results-driven Web Developer focused on dynamic, responsive websites
-            using HTML, CSS, and JavaScript. I prioritize user-friendly design,
-            performance optimization, and cross-device compatibility while
-            delivering data-driven insights through dashboards and analytics.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="#contact">Contact Me</a>
-            <a class="btn btn-ghost" href="./Illinois_Fermin_CV.pdf" download>Download CV</a>
-          </div>
-          <div class="quick-stats">
-            <article class="stat-chip">
-              <p class="stat-value" data-counter-target="3">0</p>
-              <p class="stat-label">Live Projects</p>
-            </article>
-            <article class="stat-chip">
-              <p class="stat-value" data-counter-target="6">0</p>
-              <p class="stat-label">Core Skills</p>
-            </article>
-            <article class="stat-chip">
-              <p class="stat-value" data-counter-target="6">0</p>
-              <p class="stat-label">Certifications</p>
-            </article>
-          </div>
-        </div>
+  <!-- SOLO PARA EL MODO CLASICO, RETRO OVERLAYS (shown only in classic mode) -->
+  <div class="retro-loader" id="retro_loader" aria-hidden="true"><div class="retro-bar"></div></div>
+  <div class="retro-statusbar" id="retro_status">&#9733; Welcome to Illinois Fermin's Homepage &#9733; Best viewed in 800x600 &#9733;</div>
 
-        <aside class="hero-side">
-          <img
-            class="profile-real profile-circle"
-            src="html_finalprojimages/profile.png"
-            alt="Portrait of Illinois Fermin"
-          />
-          <h2>Contact</h2>
-          <ul class="contact-list">
-            <li>
-              <img src="html_finalprojimages/flash.png" alt="Location" />
-              Santo Domingo, Dominican Republic
-            </li>
-            <li>
-              <img src="html_finalprojimages/envelope.png" alt="Email" />
-              <a href="mailto:illinoisfermin@gmail.com">illinoisfermin@gmail.com</a>
-            </li>
-            <li>
-              <img src="html_finalprojimages/phone.png" alt="Phone" />
-              <a href="tel:+18492625079">+1 849 262 5079</a>
-            </li>
-            <li>
-              <img src="https://cdn.simpleicons.org/linkedin/4FD1FF" alt="LinkedIn" />
-              <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
-            </li>
-            <li>
-              <img src="https://cdn.simpleicons.org/credly/F36D21" alt="Credly" />
-              <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener noreferrer">Credly Profile</a>
-            </li>
-            <li>
-              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
-              <a href="https://github.com/kx310711" target="_blank" rel="noopener noreferrer">github.com/kx310711</a>
-            </li>
-          </ul>
-        </aside>
-      </section>
-    </header>
+  <!-- NAVEGACION/ NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner wrapper">
+      <a href="#hero" class="nav-logo">IF<span class="nav-dot">.</span></a>
+      <button class="nav-burger" id="nav_burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav_links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="mailto:illinoisfermin@gmail.com" class="nav-cta">Hire me</a>
+      <button class="classic-btn" id="classic_toggle" aria-pressed="false">&#128126; Classic</button>
+    </div>
+  </nav>
 
-    <main>
-      <section class="section wrapper" id="summary">
-        <h2>Summary</h2>
-        <p>
-          Front-End Developer and Sales Operations Specialist with hands-on
-          experience building responsive web applications, improving digital user
-          journeys, and driving business results with data. I combine modern
-          frontend execution (HTML, CSS, JavaScript, React) with practical
-          analytics skills (Python, Pandas, NumPy, SQL, Excel) to transform
-          complex information into clear dashboards and actionable decisions.
-          Across sales operations, travel services, and customer-facing roles, I
-          consistently deliver process improvements, stronger customer
-          experiences, and measurable growth through collaboration, ownership,
-          and data-driven problem solving.
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-inner wrapper">
+      <div class="hero-text">
+        <p class="hero-label">
+          <span class="hero-dot"></span>
+          Available for work &nbsp;&middot;&nbsp; Santo Domingo, DR
         </p>
-      </section>
-
-      <section class="section wrapper" id="experience">
-        <h2>Experience</h2>
-        <div class="experience-list">
-          <article class="experience-item expanded">
-            <button class="experience-toggle" type="button" aria-expanded="true">
-              <span>
-                <strong>National Debt Relief, LLC</strong>
-                <small>Sales Operations Specialist · Santo Domingo, DR · Apr 2023 - Present</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Lead creditor queue management, bilingual operations, and Sales Ops support workflows.</li>
-                <li>Partner with sales teams through reports and dashboards that guide target achievement.</li>
-                <li>Improve on-boarding quality through contract review, call logging, and data cleaning controls.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>Trekking and Hiking DR</strong>
-                <small>Tourism Specialist · Santo Domingo, DR · Dec 2020 - Present</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Plan and deliver travel experiences, packages, and ticketing with high client satisfaction.</li>
-                <li>Use web development to build engaging tourism sites and improve conversion journeys.</li>
-                <li>Negotiate contracts and optimize offers using trend analysis and audience targeting insights.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>ERC (Enhanced Resource Centers)</strong>
-                <small>Billing Specialist / Customer Services · Santo Domingo, DR · Aug 2019 - Feb 2020</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Mentored agents in analytical and critical thinking to improve performance consistency.</li>
-                <li>Designed assignments and feedback loops while maintaining strong service quality under pressure.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>Conduent</strong>
-                <small>Customer Service Representative · Santo Domingo Este, DR · Feb 2019 - Aug 2019</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Delivered high quality customer support and contributed to collaborative process improvements.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>Virginia Travel</strong>
-                <small>Travel Agent · Santo Domingo, DR · Sept 2018 - Feb 2019</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Contributed to roughly 30% sales growth through contract negotiations and package strategy.</li>
-                <li>Secured 7 new partner contracts with restaurants and tour agencies to expand offers.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>D' Junior Security</strong>
-                <small>System Security Analyst · Santo Domingo, DR · Mar 2016 - Oct 2018</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Managed camera maintenance, system programming, and vulnerability checks.</li>
-                <li>Installed surveillance hardware and executed security assessment improvements.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="experience-item">
-            <button class="experience-toggle" type="button" aria-expanded="false">
-              <span>
-                <strong>Greys Center</strong>
-                <small>Web Designer / Editor · Santo Domingo, DR · Jun 2015 - Feb 2016</small>
-              </span>
-              <span class="toggle-symbol">+</span>
-            </button>
-            <div class="experience-content">
-              <ul>
-                <li>Coordinated editorial workflows with authors, editors, and designers.</li>
-                <li>Built responsive websites focused on usability and digital publishing quality.</li>
-              </ul>
-            </div>
-          </article>
+        <h1 class="hero-name">
+          <span class="hero-line" style="--d:.05s">Illinois</span>
+          <em class="hero-line" style="--d:.15s">Fermin</em>
+        </h1>
+        <div class="hero-roles">
+          <span>Front-End Developer</span>
+          <span class="hero-x">&times;</span>
+          <span>Data Analyst</span>
+          <span class="hero-x">&times;</span>
+          <span>Sales Ops</span>
         </div>
-      </section>
-
-      <section class="section wrapper" id="education">
-        <h2>Education</h2>
-        <div class="card-grid two-col">
-          <article class="card">
-            <h3>Universidad Autónoma de Santo Domingo (UASD)</h3>
-            <p>Bachelor of Science (BS), Biomedical Sciences</p>
-            <p class="meta">Santo Domingo, DR · Jan 2022 - Present</p>
-          </article>
-          <article class="card">
-            <h3>Instituto Técnico Superior Comunitario (ITSC)</h3>
-            <p>Associate Degree in Travel and Tourism Management</p>
-            <p class="meta">Santo Domingo, DR · Mar 2016 - Oct 2019</p>
-            <p class="meta">Cum Laude; GPA: 4.0</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="skills">
-        <h2>Top Skills</h2>
-        <div class="card-grid">
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, React, Bootstrap, Figma.</p>
-          </article>
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <h3>Programming</h3>
-            <p>Python, JavaScript, C, C++.</p>
-          </article>
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <h3>Performance</h3>
-            <p>Website performance optimization and SEO optimization.</p>
-          </article>
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <h3>Project Management</h3>
-            <p>Team management, Scrum, Agile delivery.</p>
-          </article>
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
-            <h3>Data Analyst</h3>
-            <p>Python, Pandas, MatLab, NumPy, SQL, Excel, IBM Cogno.</p>
-          </article>
-          <article class="card skill-card">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" alt="Salesforce" />
-            <h3>Salesforce & Travel Tools</h3>
-            <p>Salesforce, Sabre, Amadeus GDS, planning and organization.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="certifications">
-        <h2>Certifications</h2>
-        <div class="card-grid two-col">
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>IBM Data Analyst Specialization — IBM, Issued Jan 2026</p>
-          </article>
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>Google Project Management Specialization — Google, Issued Jan 2026</p>
-          </article>
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>IBM Front-End Developer Specialization — IBM, Issued Feb 2026</p>
-          </article>
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>Google Digital Marketing & E-commerce Specialization — Google, Issued Nov 2025</p>
-          </article>
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>Developing Front-End Apps with React — IBM, Issued Oct 2025</p>
-          </article>
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Certified" />
-            <p>Salesforce Sales Operations Specialization — Salesforce, Issued Jun 2025</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="projects">
-        <h2>Projects / Open Source</h2>
-        <div class="project-tools">
-          <label for="project_filter">Filter projects:</label>
-          <input
-            id="project_filter"
-            type="text"
-            placeholder="Type keyword like react, converter, calculator..."
-          />
-        </div>
-        <div class="card-grid projects-grid">
-          <article class="card project-card">
-            <img src="html_finalprojimages/flash.png" alt="Project" />
-            <h3>Simple Interest Calculator</h3>
-            <p>Built a responsive UI to calculate interest based on user input.</p>
-            <p class="tag-row">HTML • CSS • JavaScript</p>
-            <a
-              class="btn project-link"
-              href="https://kx310711.github.io/Simple-Interest-Calculator-/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Open Project</a
-            >
-          </article>
-          <article class="card project-card">
-            <img src="html_finalprojimages/flash.png" alt="Project" />
-            <h3>Unit Conversion Tool</h3>
-            <p>Created a responsive unit converter with strong input validation.</p>
-            <p class="tag-row">HTML • CSS • JavaScript</p>
-            <a
-              class="btn project-link"
-              href="https://kx310711.github.io/Unit-conversion/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Open Project</a
-            >
-          </article>
-          <article class="card project-card">
-            <img src="html_finalprojimages/flash.png" alt="Project" />
-            <h3>Alura-Oracle One</h3>
-            <p>Developed a text encryption/decryption tool focused on algorithms and UI.</p>
-            <p class="tag-row">HTML • CSS • JavaScript</p>
-            <a
-              class="btn project-link"
-              href="https://kx310711.github.io/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Open Project</a
-            >
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="awards">
-        <h2>Honors & Awards</h2>
-        <div class="card-grid two-col">
-          <article class="card cert-card">
-            <img src="html_finalprojimages/checkmark--outline.svg" alt="Award" />
-            <p>Cum Laude</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="recommendations">
-        <h2>Recommendations</h2>
-        <div class="all_recommendations" id="all_recommendations">
-          <article class="recommendation">
-            <p>
-              Illinois consistently delivers on deadlines and communicates clearly
-              with both technical and non-technical teammates.
-            </p>
-          </article>
-          <article class="recommendation">
-            <p>
-              Strong collaboration skills and a practical mindset make Illinois a
-              reliable contributor on fast-moving projects.
-            </p>
-          </article>
-          <article class="recommendation">
-            <p>
-              Excellent growth in ownership and planning. The quality of work has
-              improved steadily with each release.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section wrapper" id="contact">
-        <h2>Leave a comment</h2>
-        <form class="contact-form" onsubmit="addRecommendation(event)">
-          <label for="name_input">Name (optional)</label>
-          <input id="name_input" name="name" type="text" placeholder="Your name" />
-
-          <label for="new_recommendation">Message</label>
-          <textarea
-            id="new_recommendation"
-            name="message"
-            rows="5"
-            placeholder="Write your recommendation here"
-          ></textarea>
-
-          <button class="btn btn-primary" type="submit">Submit Recommendation</button>
-        </form>
-      </section>
-    </main>
-
-    <a class="back-to-top" href="#home" aria-label="Back to top">↑</a>
-
-    <dialog class="popup" id="popup">
-      <img src="html_finalprojimages/checkmark--outline.svg" alt="Success" />
-      <h3>Recommendation saved</h3>
-      <p>Thank you for sharing your feedback.</p>
-      <button class="btn btn-secondary" onclick="showPopup(false)">Close</button>
-    </dialog>
-
-    <footer class="site-footer">
-      <div class="wrapper footer-grid">
-        <p class="retro-badge">UNDER CONSTRUCTION</p>
-        <p class="visitor-counter">Visitor Counter: <span id="visit_count">000000</span></p>
-        <p>Copyright © 2026 Illinois Fermin. All rights reserved.</p>
-        <p>Santo Domingo, Dominican Republic</p>
-        <p><a href="mailto:illinoisfermin@gmail.com">illinoisfermin@gmail.com</a> | <a href="tel:+18492625079">+1 849 262 5079</a></p>
-        <p>
-          <img class="footer-logo" src="https://cdn.simpleicons.org/linkedin/4FD1FF" alt="LinkedIn" />
-          <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          |
-          <img class="footer-logo" src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
-          <a href="https://github.com/kx310711" target="_blank" rel="noopener noreferrer">GitHub</a>
-          |
-          <img class="footer-logo" src="https://cdn.simpleicons.org/credly/F36D21" alt="Credly" />
-          <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener noreferrer">Credly</a>
+        <p class="hero-bio">
+          I build responsive, high-performance web applications and transform complex data into clear, actionable insights. HTML &middot; CSS &middot; JavaScript &middot; React &middot; Python &middot; SQL.
         </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="./Illinois_Fermin_CV.pdf" download class="btn btn-ghost">Download CV</a>
+        </div>
       </div>
-    </footer>
-    <div class="retro-statusbar" id="retro_statusbar" aria-live="polite">Ready</div>
-  </body>
+      <div class="hero-aside">
+        <div class="hero-img-wrap">
+          <img src="html_finalprojimages/profile.png" alt="Illinois Fermin" class="hero-img">
+        </div>
+        <div class="hero-stats">
+          <div class="stat-box">
+            <span class="stat-n" data-target="3">0</span>
+            <span class="stat-l">Live Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-n" data-target="6">0</span>
+            <span class="stat-l">Certifications</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-n" data-target="8">0</span>
+            <span class="stat-l">Years Exp.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><div class="scroll-track"></div></div>
+  </header>
+
+  <main>
+
+    <!-- ABOUT// CONSEJO PARA LAS PERSONAS QUE TOMARAN MI CODIGO, EVITEN FALTAS ORTOGRAFICAS -->
+    <section class="section" id="about">
+      <div class="wrapper s-grid">
+        <div class="s-label-col"><p class="s-tag">01 — About</p></div>
+        <div class="s-body-col">
+          <h2 class="s-title">Building digital<br><em>experiences that matter</em></h2>
+          <div class="about-text">
+            <p>Front-End Developer and Sales Operations Specialist with hands-on experience building responsive web applications, improving digital user journeys, and driving business results with data.</p>
+            <p>I combine modern frontend execution (HTML, CSS, JavaScript, React) with practical analytics skills (Python, Pandas, NumPy, SQL, Excel) to transform complex information into clear dashboards and actionable decisions.</p>
+          </div>
+          <div class="contact-pills">
+            <a href="mailto:illinoisfermin@gmail.com" class="pill">illinoisfermin@gmail.com</a>
+            <a href="tel:+18492625079" class="pill">+1 849 262 5079</a>
+            <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener" class="pill">LinkedIn &#8599;</a>
+            <a href="https://github.com/kx310711" target="_blank" rel="noopener" class="pill">GitHub &#8599;</a>
+            <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener" class="pill">Credly &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA // EXPERIENCE // Remember, dont add too much bro-->
+    <section class="section section-dark" id="experience">
+      <div class="wrapper">
+        <div class="s-header">
+          <p class="s-tag light">02 — Experience</p>
+          <h2 class="s-title light">Where I've<br><em>made an impact</em></h2>
+        </div>
+        <div class="exp-list">
+
+          <article class="exp-item is-open">
+            <button class="exp-btn" aria-expanded="true">
+              <div class="exp-top"><span class="exp-company">National Debt Relief, LLC</span><span class="exp-date">Apr 2023 — Present</span></div>
+              <div class="exp-mid"><span class="exp-role">Sales Operations Specialist</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Lead creditor queue management, bilingual operations, and Sales Ops support workflows.</li>
+              <li>Partner with sales teams through reports and dashboards that guide target achievement.</li>
+              <li>Improve on-boarding quality through contract review, call logging, and data cleaning controls.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">Trekking and Hiking DR</span><span class="exp-date">Dec 2020 — Present</span></div>
+              <div class="exp-mid"><span class="exp-role">Tourism Specialist</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Plan and deliver travel experiences, packages, and ticketing with high client satisfaction.</li>
+              <li>Use web development to build engaging tourism sites and improve conversion journeys.</li>
+              <li>Negotiate contracts and optimize offers using trend analysis and audience targeting insights.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">ERC — Enhanced Resource Centers</span><span class="exp-date">Aug 2019 — Feb 2020</span></div>
+              <div class="exp-mid"><span class="exp-role">Billing Specialist / Customer Services</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Mentored agents in analytical and critical thinking to improve performance consistency.</li>
+              <li>Designed assignments and feedback loops while maintaining strong service quality under pressure.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">Conduent</span><span class="exp-date">Feb 2019 — Aug 2019</span></div>
+              <div class="exp-mid"><span class="exp-role">Customer Service Representative</span><span class="exp-loc">Santo Domingo Este, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Delivered high quality customer support and contributed to collaborative process improvements.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">Virginia Travel</span><span class="exp-date">Sept 2018 — Feb 2019</span></div>
+              <div class="exp-mid"><span class="exp-role">Travel Agent</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Contributed to roughly 30% sales growth through contract negotiations and package strategy.</li>
+              <li>Secured 7 new partner contracts with restaurants and tour agencies to expand offers.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">D' Junior Security</span><span class="exp-date">Mar 2016 — Oct 2018</span></div>
+              <div class="exp-mid"><span class="exp-role">System Security Analyst</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Managed camera maintenance, system programming, and vulnerability checks.</li>
+              <li>Installed surveillance hardware and executed security assessment improvements.</li>
+            </ul></div>
+          </article>
+
+          <article class="exp-item">
+            <button class="exp-btn" aria-expanded="false">
+              <div class="exp-top"><span class="exp-company">Greys Center</span><span class="exp-date">Jun 2015 — Feb 2016</span></div>
+              <div class="exp-mid"><span class="exp-role">Web Designer / Editor</span><span class="exp-loc">Santo Domingo, DR</span></div>
+              <span class="exp-icon">+</span>
+            </button>
+            <div class="exp-body"><ul>
+              <li>Coordinated editorial workflows with authors, editors, and designers.</li>
+              <li>Built responsive websites focused on usability and digital publishing quality.</li>
+            </ul></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS / MORE COMING SOON, ADD MORE LATER AND DONT FORGET ILLY PORQUE TENGO MAS-->
+    <section class="section" id="skills">
+      <div class="wrapper s-grid">
+        <div class="s-label-col"><p class="s-tag">03 — Skills</p></div>
+        <div class="s-body-col">
+          <h2 class="s-title">What I bring<br><em>to the table</em></h2>
+          <div class="skills-grid">
+            <div class="skill-card"><div class="skill-icon">&#9000;</div><h3>Web Development</h3><p>HTML, CSS, JavaScript, React, Bootstrap, Figma</p></div>
+            <div class="skill-card"><div class="skill-icon">&#9881;</div><h3>Programming</h3><p>Python, JavaScript, C, C++</p></div>
+            <div class="skill-card"><div class="skill-icon">&#9889;</div><h3>Performance &amp; SEO</h3><p>Website optimization, Core Web Vitals, SEO best practices</p></div>
+            <div class="skill-card"><div class="skill-icon">&#9678;</div><h3>Project Management</h3><p>Team management, Scrum, Agile delivery</p></div>
+            <div class="skill-card"><div class="skill-icon">&#10070;</div><h3>Data Analysis</h3><p>Python, Pandas, NumPy, SQL, Excel, IBM Cognos</p></div>
+            <div class="skill-card"><div class="skill-icon">&#10022;</div><h3>Sales &amp; Travel Tools</h3><p>Salesforce, Sabre, Amadeus GDS</p></div>
+          </div>
+          <div class="certs-wrap">
+            <p class="block-label">Certifications</p>
+            <div class="certs-grid">
+              <div class="cert-item">IBM Data Analyst Specialization <em>Jan 2026</em></div>
+              <div class="cert-item">Google Project Management <em>Jan 2026</em></div>
+              <div class="cert-item">IBM Front-End Developer <em>Feb 2026</em></div>
+              <div class="cert-item">Google Digital Marketing &amp; E-commerce <em>Nov 2025</em></div>
+              <div class="cert-item">Developing Front-End Apps with React <em>Oct 2025</em></div>
+              <div class="cert-item">Salesforce Sales Operations <em>Jun 2025</em></div>
+            </div>
+          </div>
+          <div class="edu-wrap">
+            <p class="block-label">Education</p>
+            <div class="edu-list">
+              <div class="edu-item">
+                <span class="edu-school">Universidad Aut&oacute;noma de Santo Domingo (UASD)</span>
+                <span class="edu-degree">B.S. in Biomedical Sciences &middot; 2022 &ndash; Present</span>
+              </div>
+              <div class="edu-item">
+                <span class="edu-school">Instituto T&eacute;cnico Superior Comunitario (ITSC)</span>
+                <span class="edu-degree">A.D. in Travel &amp; Tourism Management &middot; Cum Laude &middot; GPA 4.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS / MORE COMING SOON -->
+    <section class="section section-tint" id="projects">
+      <div class="wrapper">
+        <div class="s-header">
+          <p class="s-tag">04 — Projects</p>
+          <h2 class="s-title">Things I've<br><em>shipped</em></h2>
+        </div>
+        <div class="projects-grid">
+          <a href="https://kx310711.github.io/Simple-Interest-Calculator-/" target="_blank" rel="noopener" class="proj-card">
+            <span class="proj-num">01</span>
+            <div class="proj-body"><h3>Simple Interest Calculator</h3><p>Responsive UI to calculate interest based on user input with clean form validation.</p><div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+            <span class="proj-arrow">&#8594;</span>
+          </a>
+          <a href="https://kx310711.github.io/Unit-conversion/" target="_blank" rel="noopener" class="proj-card">
+            <span class="proj-num">02</span>
+            <div class="proj-body"><h3>Unit Conversion Tool</h3><p>Responsive unit converter with strong input validation across multiple measurement types.</p><div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+            <span class="proj-arrow">&#8594;</span>
+          </a>
+          <a href="https://kx310711.github.io/" target="_blank" rel="noopener" class="proj-card">
+            <span class="proj-num">03</span>
+            <div class="proj-body"><h3>Alura-Oracle One</h3><p>Text encryption/decryption tool focused on custom algorithms and polished UI/UX.</p><div class="proj-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+            <span class="proj-arrow">&#8594;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECOMMENDATIONS -->
+    <section class="section" id="recommendations">
+      <div class="wrapper s-grid">
+        <div class="s-label-col"><p class="s-tag">05 — Recommendations</p></div>
+        <div class="s-body-col">
+          <h2 class="s-title">What others<br><em>say</em></h2>
+          <div class="recs-list" id="recs_list">
+            <blockquote class="rec-card"><p>&ldquo;Illinois consistently delivers on deadlines and communicates clearly with both technical and non-technical teammates.&rdquo;</p></blockquote>
+            <blockquote class="rec-card"><p>&ldquo;Strong collaboration skills and a practical mindset make Illinois a reliable contributor on fast-moving projects.&rdquo;</p></blockquote>
+            <blockquote class="rec-card"><p>&ldquo;Excellent growth in ownership and planning. The quality of work has improved steadily with each release.&rdquo;</p></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO //Contact -->
+    <section class="section section-dark" id="contact">
+      <div class="wrapper">
+        <div class="s-header">
+          <p class="s-tag light">06 — Contact</p>
+          <h2 class="s-title light">Let's build<br><em>something great</em></h2>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-info">
+            <p>Open to freelance projects, full-time roles, and collaborations. I respond within 24 hours.</p>
+            <div class="contact-links">
+              <a href="mailto:illinoisfermin@gmail.com">illinoisfermin@gmail.com</a>
+              <a href="tel:+18492625079">+1 849 262 5079</a>
+              <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+              <a href="https://github.com/kx310711" target="_blank" rel="noopener">GitHub &#8599;</a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact_form">
+            <div class="form-group">
+              <label for="f_name">Name (optional)</label>
+              <input id="f_name" type="text" placeholder="Your name" autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="f_msg">Message</label>
+              <textarea id="f_msg" rows="4" placeholder="Leave a recommendation or say hello&hellip;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper footer-inner">
+      <span class="footer-logo">IF<span class="nav-dot">.</span></span>
+      <p>&copy; 2026 Illinois Fermin &middot; Santo Domingo, DR</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/illinois-fermin-00807621b" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/kx310711" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.credly.com/users/illinois-fermin" target="_blank" rel="noopener">Credly</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-top" aria-label="Back to top">&#8593;</a>
+
+  <dialog id="popup" class="popup">
+    <p>Thanks for your message! &#127881;</p>
+    <button id="popup_close" class="btn btn-ghost">Close</button>
+  </dialog>
+
+  <script src="./script.js" defer></script>
+</body>
 </html>
