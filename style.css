@@ -1,7 +1,7 @@
 /* =============================================
    ILLINOIS FERMIN — PORTFOLIO- Copyright 2026
    Estilo de Theme: Editorial · Warm Cream & Deep Ink, Formal y elegante!
-   Fonts: DM Serif Display + DM Sans // Recomiendo personalizarlo
+   Fonts: DM Serif Display + DM Sans // Recomiendo personalizar
 ============================================= */
 
 :root {
@@ -251,7 +251,7 @@ body {
   color: var(--dark-muted); margin-top: .3rem;
 }
 
-/* Hero scroll indicator */
+/*Hero scroll indicator*/
 .hero-scroll {
   display: flex; justify-content: center;
   padding-bottom: 2rem; position: relative; z-index: 1;
@@ -313,7 +313,7 @@ body {
 }
 .pill:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
 
-/*  EXPERIENCE  */
+/*EXPERIENCE*/
 .exp-list { display: flex; flex-direction: column; }
 .exp-item {
   border-bottom: 1px solid var(--dark-border);
